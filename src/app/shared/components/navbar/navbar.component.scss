@@ -1,0 +1,138 @@
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Keep left and right apart */
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  
+  /* Left Section: Logo + Menu */
+  .left-section {
+    display: flex;
+    align-items: center;
+    gap: 40px; /* Control spacing between logo and menu */
+  }
+  
+  /* Logo */
+  .logo img {
+    height: 50px;
+    width: auto;
+    cursor: pointer;
+  }
+  
+  .logo {
+    padding-left: 0; /* Remove extra space */
+  }
+  /* Navigation Menu */
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 50px;  /* Space between items */
+    margin: 0;  /* Remove default margins */
+    padding: 0; /* Remove extra padding */
+    align-items: center;
+  }
+  .nav-menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-menu li a:hover {
+    color: #007bff;
+  }
+  
+  /* Login Button */
+  .logout-btn{
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #0056b3;
+  }
+  
+ /* Right Section: Input + Button */
+.right-section {
+    display: flex;               /* Place input and button in one line */
+    align-items: center;         /* Vertically center them */
+    gap: 23px;                 /* Space between input and button */
+  }
+  
+  /* Input Styling */
+  .right-section input {
+    // padding: px 14px
+    padding:8px 14px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  /* Input Focus Effect */
+  .right-section input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  }
+  
+  /* Login Button */
+  .logout-btn {
+    padding: 10px 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  /* Responsive Navbar */
+  @media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      padding: 15px 20px;
+      align-items: flex-start;
+    }
+  
+    .left-section {
+        display: flex;
+        align-items: center;
+        gap: 60px; /* Increase gap between logo and list */
+      }
+      .nav-menu {
+        margin-left: 60px; /* Push the menu away from logo */
+      }
+    .nav-links {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 10px;
+    }
+  
+    .login-btn {
+      padding: 6px 12px;
+      font-size: 14px;
+    }
+  }
+  
