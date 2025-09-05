@@ -2,7 +2,7 @@
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Bigger cards */
-    gap: 40px; /* ✅ Increase space between cards */
+    gap: 30px 40px; /* row-gap: 30px, column-gap: 40px */
     padding: 30px; /* Add padding around the whole grid */
     max-width: 1200px;
     margin: 34px auto;

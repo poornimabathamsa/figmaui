@@ -1,0 +1,117 @@
+/* Outer wrapper to center form horizontally & vertically */
+.login-wrapper {
+    display: flex;
+    justify-content: center;   /* Center horizontally */
+    align-items: center;       /* Center vertically */
+    min-height: 100vh;         /* Full screen height */
+    margin: 0;
+    padding: 20px;             /* Add some padding on small screens */
+}
+
+/* Form content container */
+.login-content {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background: white;
+    border-radius: 8px;
+}
+
+/* Logo styling */
+.logo {
+    margin: 0 0 40px 0;
+    padding-bottom: 0;
+}
+
+/* Form container */
+.form-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Paragraph inside form */
+.form-container p {
+    display: block;
+    text-align: left;
+    color: gray;
+}
+
+/* Heading inside form */
+.form-container h2 {
+    margin-bottom: 25px;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Links inside form */
+.form-container a {
+    color: rgb(153, 148, 148);
+    text-decoration: none;
+}
+
+/* Form layout */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 5px;
+}
+
+/* Label styling */
+.form-container label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: black;
+    padding-left: 2px;
+}
+
+/* Input fields */
+.form-container input {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid white;                    
+    border-radius: 6px;
+    outline: none;
+    background-color: #ccffcc !important; /* ✅ Light green background */
+    color: #000;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+    margin-bottom: 5px;
+}
+
+/* Keep green background when input is focused */
+.form-container input:focus {
+    background-color: #b2f2bb !important; /* Slightly brighter green on focus */
+    box-shadow: 0 0 5px rgba(46, 125, 50, 0.3);
+}
+
+/* Remove Chrome autofill yellow background */
+.form-container input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #f7f5f5 inset !important;
+    -webkit-text-fill-color: #000 !important;
+}
+
+/* Button styling */
+.form-container button {
+    padding: 12px;
+    margin-top:0px;
+    background-color: #2e7d32;   /* ✅ Green button */
+    color: white;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+.form-container button:hover {
+    background-color: #1b5e20;   /* Darker green */
+}
